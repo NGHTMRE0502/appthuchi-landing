@@ -1,6 +1,6 @@
-/* App Thu Chi — landing page
+/* App Thu Chi - landing page
    ────────────────────────────────────────────────────────────
-   BA THU CAN SUA KHI DOI DOT BAN — chi sua 3 dong ngay duoi day:
+   BA THU CAN SUA KHI DOI DOT BAN, chi sua 3 dong ngay duoi day:
      ZALO      : so dien thoai Zalo nhan don
      DEADLINE  : luc het uu dai (nam, thang 1-12, ngay, gio, phut)
      SLOTS_LEFT: so suat con lai hien tren trang
@@ -39,14 +39,14 @@ function tick() {
   if (left <= 0) {
     cdEls.forEach(function (el) { el.textContent = 'đã kết thúc'; });
     if (daysEl && daysEl.parentElement) {
-      daysEl.parentElement.innerHTML = '🔔 Đợt 1 đã đóng — nhắn Zalo để giữ chỗ đợt sau';
+      daysEl.parentElement.innerHTML = '🔔 Đợt 1 đã đóng, nhắn Zalo để giữ chỗ đợt sau';
     }
     document.querySelectorAll('.final-note').forEach(function (el) {
-      el.textContent = 'Đợt 1 đã đóng — nhắn Zalo để giữ chỗ đợt sau.';
+      el.textContent = 'Đợt 1 đã đóng, nhắn Zalo để giữ chỗ đợt sau.';
     });
     if (statusEl) {
       statusEl.className = 'price-foot offer-closed';
-      statusEl.innerHTML = 'Đợt mở bán đầu tiên đã kết thúc — nhắn Zalo để được báo khi mở đợt tiếp theo.';
+      statusEl.innerHTML = 'Đợt mở bán đầu tiên đã kết thúc, nhắn Zalo để được báo khi mở đợt tiếp theo.';
     }
     clearInterval(timer);
     return;

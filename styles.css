@@ -1,4 +1,4 @@
-/* App Thu Chi — landing page
+/* App Thu Chi - landing page
    Bang mau lay tu chinh app (src/web/public/styles.css) de trang va app nhin cung mot he. */
 
 :root {
@@ -131,6 +131,44 @@ code {
 .pain-punch {
   margin: 34px auto 0; max-width: 34em; text-align: center;
   font-size: clamp(18px, 2.6vw, 23px); font-weight: 600; color: var(--ink);
+}
+
+/* ---------- Phan noi voi nguoi da dung template Sheet ---------- */
+.section-aware { background: #fffdf6; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.aware-punch {
+  margin: 0 auto 34px; max-width: 48em; text-align: center;
+  font-size: 17px; color: #46516b;
+}
+.aware-punch b { color: var(--ink); }
+.aware-close {
+  margin: 30px auto 0; max-width: 40em; text-align: center;
+  font-size: clamp(17px, 2.4vw, 21px); font-weight: 600; line-height: 1.5; color: var(--ink);
+}
+
+.compare {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+}
+.compare-row {
+  display: grid; grid-template-columns: 1fr; gap: 4px;
+  padding: 16px 18px; border-bottom: 1px solid var(--border); font-size: 15px;
+}
+.compare-row:last-child { border-bottom: 0; }
+.compare-row > span:first-child { font-weight: 600; color: var(--ink); }
+.compare-head { display: none; }
+.c-bad, .c-good { position: relative; padding-left: 26px; color: #4b5670; }
+.c-bad::before { content: "✕"; position: absolute; left: 4px; color: var(--chi); font-weight: 700; }
+.c-good::before { content: "✓"; position: absolute; left: 3px; color: var(--thu); font-weight: 700; }
+.c-good { color: var(--ink); }
+
+@media (min-width: 860px) {
+  .compare-row { grid-template-columns: 1.1fr 1.5fr 1.5fr; gap: 20px; align-items: start; }
+  .compare-head {
+    display: grid; background: #f7f9fd; font-size: 13.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .04em; color: var(--muted); padding: 12px 18px;
+  }
+  .compare-head > span:first-child { color: var(--muted); }
+  .compare-head > span:nth-child(3) { color: var(--accent-dark); }
 }
 
 /* ---------- Khung chat ---------- */

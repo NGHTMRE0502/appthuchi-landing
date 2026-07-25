@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>App Thu Chi — Ghi chi tiêu bằng 1 tin nhắn Telegram, dữ liệu nằm trên máy bạn</title>
+<title>App Thu Chi: ghi chi tiêu bằng 1 tin nhắn Telegram, dữ liệu nằm trên máy bạn</title>
 <meta name="description" content="Nhắn '15k cà phê' cho bot Telegram, 3 giây là xong. Dashboard biểu đồ tự cập nhật, dữ liệu lưu ngay trên máy bạn. Cài 1 lần dùng mãi, không thuê bao tháng.">
 <meta name="theme-color" content="#f59e0b">
 <link rel="icon" href="images/app-icon.png">
 <link rel="stylesheet" href="styles.css">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="App Thu Chi — Ghi chi tiêu bằng 1 tin nhắn Telegram">
-<meta property="og:description" content="Bỏ Excel đi. Nhắn '15k cà phê' cho bot, biểu đồ tự cập nhật. Dữ liệu nằm trên máy bạn, không gửi lên mạng.">
+<meta property="og:title" content="App Thu Chi: ghi chi tiêu bằng 1 tin nhắn Telegram">
+<meta property="og:description" content="Bỏ Excel và Google Sheet đi. Nhắn '15k cà phê' cho bot, biểu đồ tự cập nhật. Dữ liệu nằm trên máy bạn, không gửi lên mạng.">
 <meta property="og:image" content="images/overview.png">
 <meta property="og:locale" content="vi_VN">
 </head>
@@ -53,7 +53,7 @@
     </div>
     <figure class="hero-shot">
       <img src="images/overview.png" alt="Màn hình Tổng quan của App Thu Chi: tổng thu, tổng chi, còn lại, công nợ và 2 biểu đồ tròn" width="2560" height="1400">
-      <figcaption>Dashboard chạy ngay trên máy bạn — số liệu trong ảnh là dữ liệu mẫu.</figcaption>
+      <figcaption>Dashboard chạy ngay trên máy bạn. Số liệu trong ảnh là dữ liệu mẫu.</figcaption>
     </figure>
   </div>
 </section>
@@ -66,7 +66,7 @@
       <article class="card pain-card">
         <span class="pain-emoji">😮‍💨</span>
         <h3>“Để tí ghi sau”</h3>
-        <p>Mở sheet lên mất cả phút. Đang đi đường, đang ăn, đang họp — thôi để tối ghi. Rồi quên luôn.</p>
+        <p>Mở sheet lên mất cả phút. Đang đi đường, đang ăn, đang họp, thôi để tối ghi. Rồi quên luôn.</p>
       </article>
       <article class="card pain-card">
         <span class="pain-emoji">📉</span>
@@ -88,12 +88,74 @@
   </div>
 </section>
 
+<!-- ═══════════ NGƯỜI ĐÃ DÙNG TEMPLATE SHEET ═══════════ -->
+<section class="section section-aware" id="aware">
+  <div class="wrap">
+    <h2 class="section-title">Bạn đã từng mua template thu chi trên Google Sheet, đúng không?</h2>
+    <p class="section-sub">
+      Nếu đúng thì bạn thuộc nhóm thiểu số: có ý thức tài chính, chịu bỏ tiền mua công cụ,
+      chịu ngồi tô màu và đặt công thức. Chuyện bạn dừng lại không phải vì bạn thiếu kỷ luật.
+    </p>
+
+    <p class="aware-punch">
+      Thứ chặn bạn là <b>chi phí thao tác</b>: mỗi khoản chi bắt bạn trả 1 đến 2 phút
+      mở máy, tìm file, gõ 5 ô. Nhân 300 khoản một tháng, bạn đang trả gần <b>8 tiếng mỗi tháng</b>
+      chỉ để nhập liệu. Không ai duy trì nổi việc đó lâu dài. Sheet trống dần, rồi bạn quay lại
+      trạng thái mù mờ về tiền của chính mình, dù bạn hoàn toàn có ý thức muốn khác đi.
+    </p>
+
+    <div class="compare">
+      <div class="compare-row compare-head">
+        <span>Việc bạn cần làm</span>
+        <span>Template Google Sheet / Excel</span>
+        <span>App Thu Chi</span>
+      </div>
+      <div class="compare-row">
+        <span>Ghi một khoản chi</span>
+        <span class="c-bad">Mở máy, tìm file, kéo tới dòng cuối, gõ 5 ô: 1 đến 2 phút</span>
+        <span class="c-good">Nhắn <code>15k cà phê</code>: 3 giây</span>
+      </div>
+      <div class="compare-row">
+        <span>Ghi lúc đang ở ngoài đường</span>
+        <span class="c-bad">Gần như không làm được, để về nhà rồi quên</span>
+        <span class="c-good">Nhắn tin như nhắn cho bạn bè, ở đâu cũng ghi được</span>
+      </div>
+      <div class="compare-row">
+        <span>Tiền vay và cho vay</span>
+        <span class="c-bad">Phải tự nghĩ cách tách cột, dễ cộng nhầm vào thu nhập</span>
+        <span class="c-good">Tách sẵn thành công nợ, không lẫn vào tổng thu chi</span>
+      </div>
+      <div class="compare-row">
+        <span>Nhắc khoản nợ tới hạn</span>
+        <span class="c-bad">Không có, phải tự nhớ</span>
+        <span class="c-good">Bot nhắn nhắc lúc 8 giờ sáng đúng ngày hẹn</span>
+      </div>
+      <div class="compare-row">
+        <span>Biểu đồ và báo cáo</span>
+        <span class="c-bad">Tự dựng pivot, tự sửa công thức mỗi khi thêm nhóm mới</span>
+        <span class="c-good">9 màn hình có sẵn, tự cập nhật sau mỗi tin nhắn</span>
+      </div>
+      <div class="compare-row">
+        <span>Dữ liệu nằm ở đâu</span>
+        <span class="c-bad">Trên Google Drive, gắn với tài khoản của bạn</span>
+        <span class="c-good">Một file trong máy bạn, không gửi đi đâu cả</span>
+      </div>
+    </div>
+
+    <p class="aware-close">
+      Bạn không cần thêm quyết tâm. Bạn cần bỏ đi cái rào chắn 2 phút đó.
+      Bỏ được rào chắn, việc ghi chép mới thành thói quen, và thói quen đó mới đưa bạn tới
+      an toàn tài chính thật sự.
+    </p>
+  </div>
+</section>
+
 <!-- ═══════════ GIẢI PHÁP ═══════════ -->
 <section class="section section-alt" id="how">
   <div class="wrap">
     <h2 class="section-title">Nhắn một câu như nói chuyện. Hết.</h2>
     <p class="section-sub">
-      Không app phải mở, không form phải điền, không nhóm phải chọn. Bạn nhắn tiếng Việt kiểu gì cũng được —
+      Không app phải mở, không form phải điền, không nhóm phải chọn. Bạn nhắn tiếng Việt kiểu gì cũng được,
       bot tự hiểu số tiền, tự xếp nguồn, tự đánh dấu mức độ cần thiết.
     </p>
 
@@ -163,7 +225,7 @@
 <section class="section" id="screens">
   <div class="wrap">
     <h2 class="section-title">9 màn hình, ảnh chụp thật từ app</h2>
-    <p class="section-sub">Bạn nhắn tin bằng điện thoại — máy tính ở nhà tự vẽ ra tất cả những thứ dưới đây.</p>
+    <p class="section-sub">Bạn nhắn tin bằng điện thoại, máy tính ở nhà tự vẽ ra tất cả những thứ dưới đây.</p>
 
     <div class="shots">
       <div class="shot-tabs" role="tablist">
@@ -188,15 +250,15 @@
       </figure>
       <figure class="shot-panel" data-panel="budget">
         <img src="images/budget.png" alt="Tab Hạn mức" loading="lazy">
-        <figcaption><b>Đặt trần 2,5 triệu cho Ăn uống — vượt là báo đỏ kèm chữ VƯỢT.</b> Không phải tự bấm máy tính, không phải nhớ mình còn bao nhiêu.</figcaption>
+        <figcaption><b>Đặt trần 2,5 triệu cho Ăn uống, vượt là báo đỏ kèm chữ VƯỢT.</b> Không phải tự bấm máy tính, không phải nhớ mình còn bao nhiêu.</figcaption>
       </figure>
       <figure class="shot-panel" data-panel="top">
         <img src="images/top.png" alt="Tab Top chi" loading="lazy">
-        <figcaption><b>5 khoản ngốn tiền nhất tháng, xếp thẳng hàng.</b> Muốn cắt giảm thì cắt ở đâu — nhìn phát ra ngay.</figcaption>
+        <figcaption><b>5 khoản ngốn tiền nhất tháng, xếp thẳng hàng.</b> Muốn cắt giảm thì cắt ở đâu, nhìn phát ra ngay.</figcaption>
       </figure>
       <figure class="shot-panel" data-panel="year">
         <img src="images/year.png" alt="Tab Năm" loading="lazy">
-        <figcaption><b>12 tháng trên cùng một đường.</b> Tháng nào chi vượt thu, tháng nào để dành được — thấy rõ xu hướng cả năm.</figcaption>
+        <figcaption><b>12 tháng trên cùng một đường.</b> Tháng nào chi vượt thu, tháng nào để dành được, thấy rõ xu hướng cả năm.</figcaption>
       </figure>
       <figure class="shot-panel" data-panel="transactions">
         <img src="images/transactions.png" alt="Tab Giao dịch" loading="lazy">
@@ -204,7 +266,7 @@
       </figure>
       <figure class="shot-panel" data-panel="debts">
         <img src="images/debts.png" alt="Tab Công nợ" loading="lazy">
-        <figcaption><b>Ai nợ mình, mình nợ ai, hẹn ngày nào.</b> Tới hẹn bot tự nhắn nhắc — hết cảnh ngại không dám đòi vì quên mất.</figcaption>
+        <figcaption><b>Ai nợ mình, mình nợ ai, hẹn ngày nào.</b> Tới hẹn bot tự nhắn nhắc, hết cảnh ngại không dám đòi vì quên mất.</figcaption>
       </figure>
       <figure class="shot-panel" data-panel="assets">
         <img src="images/assets.png" alt="Tab Tài sản" loading="lazy">
@@ -221,14 +283,18 @@
 <!-- ═══════════ VÌ SAO KHÁC ═══════════ -->
 <section class="section section-alt" id="why">
   <div class="wrap">
-    <h2 class="section-title">Bốn thứ mà file Excel không làm được</h2>
+    <h2 class="section-title">Bốn thứ mà Excel và Google Sheet không làm được</h2>
+    <p class="section-sub">
+      Không phải vì bảng tính dở. Là vì bảng tính sinh ra để tính toán, không sinh ra để
+      chạy theo bạn cả ngày và nhắc bạn từng khoản.
+    </p>
     <div class="cards-4">
       <article class="card why-card">
         <span class="why-icon">🔒</span>
         <h3>Dữ liệu nằm trên máy bạn</h3>
         <p>
           Không tài khoản, không đăng nhập, không đồng bộ lên server nào cả. Sổ chi tiêu là một file
-          nằm trong máy bạn — người khác không xem được. App tự sao lưu mỗi ngày và giữ 30 bản gần nhất.
+          nằm trong máy bạn, người khác không xem được. App tự sao lưu mỗi ngày và giữ 30 bản gần nhất.
         </p>
       </article>
       <article class="card why-card">
@@ -244,7 +310,7 @@
         <h3>Bot chủ động nhắc bạn</h3>
         <p>
           Tới ngày hẹn trả nợ, 8 giờ sáng bot nhắn nhắc. Tối mà chưa ghi khoản nào, bot cũng nhắc một câu.
-          Bạn không cần nhớ — máy nhớ hộ.
+          Bạn không cần nhớ, máy nhớ hộ.
         </p>
       </article>
       <article class="card why-card">
@@ -271,7 +337,7 @@
       </div>
       <div class="step">
         <span class="step-no">2</span>
-        <h3>Bấm cài — máy tự lo phần còn lại</h3>
+        <h3>Bấm cài, máy tự lo phần còn lại</h3>
         <p>Bộ cài tự chuẩn bị mọi thứ cần thiết và tạo sẵn biểu tượng ngoài màn hình. Bạn không phải cài thêm gì.</p>
       </div>
       <div class="step">
@@ -282,7 +348,7 @@
     </div>
     <p class="install-note">
       💻 Dùng được trên cả <b>Windows</b> và <b>macOS</b> ·
-      🤝 Không rành máy tính vẫn cài được — có hướng dẫn kèm theo và mình hỗ trợ trực tiếp qua Zalo ·
+      🤝 Không rành máy tính vẫn cài được, có hướng dẫn kèm theo và mình hỗ trợ trực tiếp qua Zalo ·
       🔄 Bản cập nhật sau này cài đè lên, dữ liệu cũ giữ nguyên.
     </p>
   </div>
@@ -304,26 +370,26 @@
       <ul class="price-list">
         <li>Bộ cài đầy đủ cho Windows hoặc macOS</li>
         <li>Mã kích hoạt bản quyền riêng cho máy bạn</li>
-        <li>Toàn bộ 9 màn hình + bot Telegram không giới hạn số giao dịch</li>
+        <li>Toàn bộ 9 màn hình và bot Telegram không giới hạn số giao dịch</li>
         <li>Hướng dẫn sử dụng kèm theo, hỗ trợ cài đặt qua Zalo</li>
         <li>Được nhận các bản cập nhật của dòng hiện tại</li>
       </ul>
 
       <a class="btn btn-primary btn-block btn-lg js-zalo" href="#">💬 Nhắn Zalo lấy suất 59.000đ</a>
       <p class="price-foot" id="offerStatus">
-        Còn <b id="slotsLeft">50</b> suất · Ưu đãi kết thúc sau <b id="countdown">—</b>
+        Còn <b id="slotsLeft">50</b> suất · Ưu đãi kết thúc sau <b id="countdown">…</b>
       </p>
 
       <p class="price-why">
         <b>Vì sao chỉ 50 suất trong 7 ngày?</b><br>
         Mình muốn nghe phản hồi thật từ nhóm người dùng đầu tiên và sửa cho chắc trước khi mở bán rộng.
         Nhận nhiều hơn thì hỗ trợ không xuể. Hết 50 suất hoặc hết 7 ngày, mình tạm dừng bán để tập trung
-        hoàn thiện — bạn vẫn nhắn Zalo được để giữ chỗ đợt sau.
+        hoàn thiện. Bạn vẫn nhắn Zalo được để giữ chỗ đợt sau.
       </p>
     </div>
 
     <p class="price-compare">
-      59.000đ ≈ 1 cốc trà sữa · rẻ hơn 1 bữa ăn ngoài · bằng 1/3 tô phở của cả tháng bạn quên không ghi.
+      59.000đ bằng 1 cốc trà sữa, rẻ hơn 1 bữa ăn ngoài, và rẻ hơn hầu hết template thu chi bán trên mạng.
     </p>
   </div>
 </section>
@@ -335,19 +401,23 @@
     <div class="faq">
       <details>
         <summary>Có cần kết nối mạng không?</summary>
-        <p>Có, để nhận tin nhắn Telegram thì máy cần có mạng. Nhưng dữ liệu của bạn <b>không</b> được gửi lên server của mình hay của ai khác — nó nằm trong file trên máy bạn.</p>
+        <p>Có, để nhận tin nhắn Telegram thì máy cần có mạng. Nhưng dữ liệu của bạn <b>không</b> được gửi lên server của mình hay của ai khác, nó nằm trong file trên máy bạn.</p>
       </details>
       <details>
         <summary>Máy tính phải bật suốt à?</summary>
-        <p>App chạy trên máy bạn nên lúc máy tắt thì bot không trả lời. Telegram giữ tin nhắn giúp bạn khoảng 24 giờ — bật máy lại trong ngày là app xử lý nốt những tin đã nhắn. Ai muốn ghi mọi lúc thì cứ để máy chạy như bình thường.</p>
+        <p>App chạy trên máy bạn nên lúc máy tắt thì bot không trả lời. Telegram giữ tin nhắn giúp bạn khoảng 24 giờ, bật máy lại trong ngày là app xử lý nốt những tin đã nhắn. Ai muốn ghi mọi lúc thì cứ để máy chạy như bình thường.</p>
+      </details>
+      <details>
+        <summary>Tôi đang dùng template Google Sheet, có chuyển số liệu cũ sang được không?</summary>
+        <p>Được phần quan trọng nhất. Bạn nhắn cho bot <code>số dư đầu kỳ 12tr</code> để khai báo số tiền đang có, rồi ghi lùi ngày cho các khoản cũ muốn giữ lại, ví dụ <code>3/7 đổ xăng 100k</code> hay <code>lương tháng 6 15tr</code>. Không cần nhập lại toàn bộ lịch sử, chỉ cần đúng điểm xuất phát là các con số từ đó về sau đều chuẩn.</p>
       </details>
       <details>
         <summary>Dùng AI thì có tốn thêm tiền không?</summary>
-        <p>Không. App dùng khoá AI miễn phí của Google mà bạn tự tạo trong 1 phút (có hướng dẫn). Kể cả không có khoá AI, app vẫn chạy — nó tự đoán bằng bộ luật từ khoá tiếng Việt sẵn có.</p>
+        <p>Không. App dùng khoá AI miễn phí của Google mà bạn tự tạo trong 1 phút (có hướng dẫn). Kể cả không có khoá AI, app vẫn chạy, nó tự đoán bằng bộ luật từ khoá tiếng Việt sẵn có.</p>
       </details>
       <details>
         <summary>Một mã dùng được mấy máy?</summary>
-        <p>Một mã kích hoạt gắn với một máy. Muốn dùng thêm máy khác thì cần mã khác — nhắn Zalo mình hỗ trợ.</p>
+        <p>Một mã kích hoạt gắn với một máy. Muốn dùng thêm máy khác thì cần mã khác, nhắn Zalo mình hỗ trợ.</p>
       </details>
       <details>
         <summary>Máy Mac có dùng được không?</summary>
@@ -359,7 +429,7 @@
       </details>
       <details>
         <summary>Người lạ nhắn vào bot của mình thì sao?</summary>
-        <p>Người đầu tiên bấm /start sẽ thành chủ bot — chính là bạn. Sau đó bot bỏ qua tất cả người khác, không ai xem hay ghi được gì.</p>
+        <p>Người đầu tiên bấm /start sẽ thành chủ bot, chính là bạn. Sau đó bot bỏ qua tất cả người khác, không ai xem hay ghi được gì.</p>
       </details>
       <details>
         <summary>Có xuất được ra Excel không?</summary>
@@ -376,21 +446,21 @@
 <!-- ═══════════ CTA CUỐI ═══════════ -->
 <section class="final-cta">
   <div class="wrap wrap-narrow">
-    <h2>Tháng sau bạn vẫn không biết tiền đi đâu — hay bắt đầu từ tin nhắn đầu tiên hôm nay?</h2>
+    <h2>Tháng sau bạn vẫn không biết tiền đi đâu, hay bắt đầu từ tin nhắn đầu tiên hôm nay?</h2>
     <p>59.000đ, trả một lần, dùng mãi. Nhắn Zalo là mình gửi bộ cài và mã kích hoạt ngay.</p>
     <a class="btn btn-white btn-lg js-zalo" href="#">💬 Nhắn Zalo ngay</a>
-    <p class="final-note">Còn <b class="js-slots">50</b>/50 suất · kết thúc sau <b class="js-countdown">—</b></p>
+    <p class="final-note">Còn <b class="js-slots">50</b>/50 suất · kết thúc sau <b class="js-countdown">…</b></p>
   </div>
 </section>
 
 <footer class="footer">
   <div class="wrap">
-    <p><b>App Thu Chi</b> · phiên bản 1.2.2 · Bot Telegram + Dashboard chạy cục bộ trên máy bạn</p>
+    <p><b>App Thu Chi</b> · phiên bản 1.2.2 · Bot Telegram và Dashboard chạy cục bộ trên máy bạn</p>
     <p>Liên hệ mua &amp; hỗ trợ: <a class="js-zalo" href="#">Zalo <span class="js-phone">0392774522</span></a></p>
   </div>
 </footer>
 
-<a class="sticky-cta btn btn-primary js-zalo" href="#">💬 Nhắn Zalo — 59.000đ</a>
+<a class="sticky-cta btn btn-primary js-zalo" href="#">💬 Nhắn Zalo · 59.000đ</a>
 
 <script src="main.js"></script>
 </body>
