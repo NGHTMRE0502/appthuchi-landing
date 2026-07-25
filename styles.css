@@ -1,0 +1,278 @@
+/* App Thu Chi — landing page
+   Bang mau lay tu chinh app (src/web/public/styles.css) de trang va app nhin cung mot he. */
+
+:root {
+  --bg: #f4f6fb;
+  --panel: #ffffff;
+  --text: #1f2733;
+  --muted: #6b7794;
+  --border: #e3e8f2;
+  --thu: #16a34a;
+  --chi: #dc2626;
+  --bal: #2563eb;
+  --accent: #f59e0b;
+  --accent-dark: #d97706;
+  --ink: #0f1729;
+  --shadow: 0 4px 16px rgba(31, 41, 55, .08);
+  --shadow-lg: 0 18px 48px rgba(15, 23, 41, .14);
+  --radius: 16px;
+  --wrap: 1140px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+
+code {
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: .92em;
+  background: #eef2fb;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1px 6px;
+  white-space: nowrap;
+}
+
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+.wrap-narrow { max-width: 780px; }
+
+/* ---------- Nut ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font: inherit; font-weight: 600;
+  text-decoration: none; cursor: pointer;
+  border: 1px solid transparent; border-radius: 999px;
+  padding: 11px 22px;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--accent); color: #3b2600; box-shadow: 0 6px 18px rgba(245, 158, 11, .38); }
+.btn-primary:hover { background: var(--accent-dark); color: #fff; }
+.btn-ghost { background: var(--panel); color: var(--text); border-color: var(--border); box-shadow: var(--shadow); }
+.btn-white { background: #fff; color: var(--ink); box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
+.btn-sm { padding: 8px 16px; font-size: 14px; }
+.btn-lg { padding: 15px 30px; font-size: 17px; }
+.btn-block { display: flex; width: 100%; }
+
+/* ---------- Thanh dieu huong ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 20px;
+  padding: 10px 24px;
+  background: rgba(244, 246, 251, .88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; text-decoration: none; }
+.nav-links { display: flex; gap: 22px; margin-left: auto; font-size: 15px; }
+.nav-links a { color: var(--muted); text-decoration: none; }
+.nav-links a:hover { color: var(--text); }
+.nav .btn { margin-left: auto; }
+.nav-links + .btn { margin-left: 0; }
+
+/* ---------- Hero ---------- */
+.hero { padding: 56px 0 40px; background: linear-gradient(180deg, #fff 0%, var(--bg) 100%); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; }
+
+.badge {
+  display: inline-block; margin: 0 0 18px;
+  background: #fef3c7; color: #92400e;
+  border: 1px solid #fcd34d; border-radius: 999px;
+  padding: 6px 16px; font-size: 14px; font-weight: 600;
+}
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(30px, 5.2vw, 50px);
+  line-height: 1.15; letter-spacing: -.02em;
+  color: var(--ink);
+}
+.lead { margin: 0 0 14px; font-size: clamp(16px, 2.2vw, 19px); color: #46516b; max-width: 42em; }
+.lead-strong { color: var(--text); font-weight: 500; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
+.hero-note { margin: 0; font-size: 14px; color: var(--muted); }
+
+.hero-shot { margin: 0; }
+.hero-shot img {
+  width: 100%; border-radius: var(--radius);
+  border: 1px solid var(--border); box-shadow: var(--shadow-lg);
+}
+.hero-shot figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); text-align: center; }
+
+/* ---------- Khung section ---------- */
+.section { padding: 68px 0; }
+.section-alt { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.section-title {
+  margin: 0 0 12px; text-align: center;
+  font-size: clamp(24px, 3.6vw, 36px); line-height: 1.25; letter-spacing: -.01em; color: var(--ink);
+}
+.section-sub { margin: 0 auto 36px; max-width: 46em; text-align: center; color: var(--muted); font-size: 17px; }
+
+.card {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow);
+}
+.cards-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: 28px; }
+.cards-4 h3 { margin: 10px 0 8px; font-size: 18px; }
+.cards-4 p { margin: 0; color: #4b5670; font-size: 15px; }
+
+.pain-emoji, .why-icon { font-size: 30px; line-height: 1; }
+.pain-punch {
+  margin: 34px auto 0; max-width: 34em; text-align: center;
+  font-size: clamp(18px, 2.6vw, 23px); font-weight: 600; color: var(--ink);
+}
+
+/* ---------- Khung chat ---------- */
+.chat-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px; align-items: start; }
+.chat {
+  background: #e9eef6; border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);
+}
+.chat-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #fff; border-bottom: 1px solid var(--border); }
+.chat-head b { display: block; font-size: 15px; }
+.chat-head span { font-size: 12px; color: var(--thu); }
+.chat-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.msg { max-width: 86%; padding: 10px 14px; border-radius: 16px; font-size: 15px; line-height: 1.5; }
+.msg.out { align-self: flex-end; background: var(--bal); color: #fff; border-bottom-right-radius: 5px; }
+.msg.in { align-self: flex-start; background: #fff; border: 1px solid var(--border); border-bottom-left-radius: 5px; }
+.msg-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.msg-btns span {
+  font-size: 12.5px; padding: 5px 10px; border-radius: 8px;
+  background: #f1f5fd; border: 1px solid var(--border); color: #3d4863;
+}
+
+.chat-side h3 { margin: 0 0 14px; font-size: 20px; }
+.tick-list { list-style: none; margin: 0 0 18px; padding: 0; }
+.tick-list li { position: relative; padding-left: 26px; margin-bottom: 11px; font-size: 15px; color: #46516b; }
+.tick-list li::before { content: "✓"; position: absolute; left: 0; color: var(--thu); font-weight: 700; }
+.side-note { margin: 0; font-size: 14.5px; color: var(--muted); }
+
+/* ---------- Bo anh man hinh ---------- */
+.shot-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 22px; }
+.shot-tab {
+  font: inherit; font-size: 14.5px; cursor: pointer;
+  background: var(--panel); color: var(--text);
+  border: 1px solid var(--border); border-radius: 999px; padding: 8px 16px;
+  transition: background .12s ease, color .12s ease;
+}
+.shot-tab:hover { border-color: var(--accent); }
+.shot-tab.is-active { background: var(--accent); color: #3b2600; border-color: var(--accent); font-weight: 600; }
+
+.shot-panel { display: none; margin: 0; }
+.shot-panel.is-active { display: block; }
+.shot-panel img {
+  width: 100%; border-radius: var(--radius);
+  border: 1px solid var(--border); box-shadow: var(--shadow-lg);
+}
+.shot-panel figcaption {
+  margin: 16px auto 0; max-width: 52em; text-align: center;
+  font-size: 15.5px; color: #46516b;
+}
+
+/* ---------- Cac buoc cai dat ---------- */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+.step {
+  position: relative; background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px 22px 22px; box-shadow: var(--shadow);
+}
+.step-no {
+  position: absolute; top: -16px; left: 22px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--accent); color: #3b2600;
+  display: flex; align-items: center; justify-content: center; font-weight: 700;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, .4);
+}
+.step h3 { margin: 6px 0 8px; font-size: 18px; }
+.step p { margin: 0; color: #4b5670; font-size: 15px; }
+.install-note { margin: 26px auto 0; max-width: 56em; text-align: center; color: var(--muted); font-size: 15px; }
+
+/* ---------- Bang gia ---------- */
+.price-card {
+  background: var(--panel); border: 2px solid var(--accent);
+  border-radius: 22px; padding: 32px 28px; box-shadow: var(--shadow-lg); text-align: center;
+}
+.price-badge {
+  display: inline-block; margin: 0 0 14px;
+  background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5;
+  border-radius: 999px; padding: 5px 16px; font-size: 13.5px; font-weight: 700;
+}
+.price-row { display: flex; align-items: baseline; justify-content: center; gap: 14px; }
+.price-old { font-size: 22px; color: var(--muted); text-decoration: line-through; }
+.price-now { font-size: clamp(44px, 8vw, 62px); font-weight: 800; color: var(--chi); letter-spacing: -.02em; }
+.price-now span { font-size: .5em; font-weight: 700; }
+.price-cap { margin: 4px 0 22px; color: var(--muted); font-size: 15px; }
+
+.price-list { list-style: none; margin: 0 0 24px; padding: 0; text-align: left; }
+.price-list li { position: relative; padding-left: 28px; margin-bottom: 10px; font-size: 15.5px; }
+.price-list li::before { content: "✓"; position: absolute; left: 2px; color: var(--thu); font-weight: 700; }
+
+.price-foot { margin: 14px 0 0; font-size: 15px; color: var(--muted); }
+.price-why {
+  margin: 22px 0 0; padding-top: 20px; border-top: 1px solid var(--border);
+  font-size: 14.5px; color: #4b5670; text-align: left;
+}
+.price-compare { margin: 20px 0 0; text-align: center; color: var(--muted); font-size: 15px; }
+.offer-closed { color: var(--chi); font-weight: 600; }
+
+/* ---------- FAQ ---------- */
+.faq { margin-top: 26px; }
+.faq details {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 12px; padding: 4px 18px; margin-bottom: 10px; box-shadow: var(--shadow);
+}
+.faq summary { cursor: pointer; font-weight: 600; padding: 13px 0; font-size: 16px; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; float: right; color: var(--muted); font-weight: 400; font-size: 20px; line-height: 1.2; }
+.faq details[open] summary::after { content: "−"; }
+.faq p { margin: 0 0 14px; color: #4b5670; font-size: 15.5px; }
+
+/* ---------- CTA cuoi + footer ---------- */
+.final-cta { padding: 72px 0; background: var(--ink); color: #fff; text-align: center; }
+.final-cta h2 { margin: 0 auto 14px; max-width: 20em; font-size: clamp(23px, 3.6vw, 34px); line-height: 1.3; }
+.final-cta p { margin: 0 0 24px; color: #b9c2d6; font-size: 17px; }
+.final-note { margin-top: 18px !important; font-size: 14px; color: #8e9ab4 !important; }
+
+.footer { padding: 28px 0 92px; text-align: center; color: var(--muted); font-size: 14px; }
+.footer p { margin: 4px 0; }
+.footer a { color: var(--bal); text-decoration: none; font-weight: 600; }
+
+/* ---------- Nut noi o mobile ---------- */
+.sticky-cta { display: none; }
+
+/* ---------- Man hinh lon ---------- */
+@media (min-width: 900px) {
+  .hero { padding: 72px 0 56px; }
+  .hero-grid { grid-template-columns: 1.05fr 1fr; align-items: center; gap: 48px; }
+  .chat-wrap { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer { padding-bottom: 28px; }
+}
+
+/* ---------- Man hinh nho ---------- */
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+  .nav .btn { margin-left: auto; }
+  .section { padding: 52px 0; }
+  .hero-cta .btn { width: 100%; }
+  .shot-tabs { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; }
+  .shot-tab { flex: 0 0 auto; }
+  .sticky-cta {
+    display: flex; position: fixed; left: 14px; right: 14px; bottom: 14px; z-index: 60;
+    box-shadow: 0 8px 26px rgba(245, 158, 11, .5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn:hover { transform: none; }
+}
