@@ -103,7 +103,9 @@ code {
 }
 .lead { margin: 0 0 14px; font-size: clamp(16px, 2.2vw, 19px); color: #46516b; max-width: 42em; }
 .lead-strong { color: var(--text); font-weight: 500; }
-.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 14px; }
+/* Hai nut luon nam cung 1 hang, ke ca tren dien thoai */
+.hero-cta { display: flex; flex-wrap: nowrap; gap: 12px; margin: 26px 0 14px; }
+.hero-cta .btn { flex: 0 1 auto; min-width: 0; text-align: center; }
 .hero-note { margin: 0; font-size: 14px; color: var(--muted); }
 
 .hero-shot { margin: 0; }
@@ -297,7 +299,11 @@ code {
   .nav-links { display: none; }
   .nav .btn { margin-left: auto; }
   .section { padding: 52px 0; }
-  .hero-cta .btn { width: 100%; }
+  /* Man hinh hep: thu nho nut lai de van du cho 2 nut tren 1 hang.
+     Nut Zalo duoc chia rong hon vi chu dai hon. */
+  .hero-cta { gap: 8px; }
+  .hero-cta .btn { flex: 1 1 0; padding: 12px 10px; font-size: 14.5px; line-height: 1.35; }
+  .hero-cta .btn-primary { flex-grow: 1.35; }
   .shot-tabs { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; }
   .shot-tab { flex: 0 0 auto; }
   .sticky-cta {
