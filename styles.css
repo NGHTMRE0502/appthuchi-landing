@@ -176,21 +176,14 @@ code {
 
 /* ---------- Khung chat ---------- */
 .chat-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px; align-items: start; }
-.chat {
-  background: #e9eef6; border: 1px solid var(--border);
-  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);
+.chat-shot { margin: 0; text-align: center; }
+.chat-shot img {
+  width: 100%; max-width: 420px; margin: 0 auto;
+  border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-lg);
 }
-.chat-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #fff; border-bottom: 1px solid var(--border); }
-.chat-head b { display: block; font-size: 15px; }
-.chat-head span { font-size: 12px; color: var(--thu); }
-.chat-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
-.msg { max-width: 86%; padding: 10px 14px; border-radius: 16px; font-size: 15px; line-height: 1.5; }
-.msg.out { align-self: flex-end; background: var(--bal); color: #fff; border-bottom-right-radius: 5px; }
-.msg.in { align-self: flex-start; background: #fff; border: 1px solid var(--border); border-bottom-left-radius: 5px; }
-.msg-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.msg-btns span {
-  font-size: 12.5px; padding: 5px 10px; border-radius: 8px;
-  background: #f1f5fd; border: 1px solid var(--border); color: #3d4863;
+.chat-shot figcaption {
+  margin: 12px auto 0; max-width: 34em;
+  font-size: 14px; color: var(--muted);
 }
 
 .chat-side h3 { margin: 0 0 14px; font-size: 20px; }
